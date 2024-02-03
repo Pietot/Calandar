@@ -152,7 +152,7 @@ if __name__ == "__main__":
                 if input("Is it good for you? (0/1)\n"):
                     calendar.add_new_event(
                         user_day, user_month, user_year, user_label, user_cycle)
-                    print("Event added !")
+                    print("Event added!")
                 else:
                     print('Event not added')
             except TimeoutError:
