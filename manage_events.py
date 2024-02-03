@@ -1,6 +1,10 @@
 """Shows all events, adds or deletes an event to the json file"""
 
 
+# By Piétôt
+# Discord : Piétôt#1754 | Pietot
+
+
 import json
 import os
 
