@@ -143,7 +143,7 @@ if __name__ == "__main__":
             user_cycle = bool(user_cycle) if user_cycle == 'y' else False
 
             print(
-                f"{user_day}/{user_month}/{user_year}\nMessage:{user_label}\nCycle: {user_cycle}\n")
+                f"\n{user_day}/{user_month}/{user_year}\nLabel:{user_label}\nCycle: {user_cycle}\n")
 
             try:
                 is_all_good = input("Is it good for you? (y/n)\n")
@@ -156,7 +156,7 @@ if __name__ == "__main__":
                     print("Event not added")
             except TimeoutError:
                 print("The date does not exist")
-            except Exception as e:  # pylint: disable=broad-exception-caught
+            except Exception as e:
                 print("Error:")
                 print(e)
         elif user_response == 'd':
