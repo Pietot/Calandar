@@ -171,7 +171,7 @@ class MyCalendar():
             label (str): The message in the notification
         """
         toaster = ToastNotifier()
-        toaster.show_toast(title="Event Reminder !",  # type: ignore
+        toaster.show_toast(title="Event Reminder !",
                            msg=f'Message: {label}, {time}',
                            icon_path=self.icon_path,
                            duration=20)
