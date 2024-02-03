@@ -154,7 +154,7 @@ if __name__ == "__main__":
                         user_day, user_month, user_year, user_label, user_cycle)
                     print("Event added!")
                 else:
-                    print('Event not added')
+                    print("Event not added")
             except TimeoutError:
                 print("This date does not exist")
             except Exception as e:
