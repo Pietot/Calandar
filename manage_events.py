@@ -1,10 +1,6 @@
 """Shows all events, adds or deletes an event to the json file"""
 
 
-# By Piétôt
-# Discord : Piétôt#1754 | Pietot
-
-
 import json
 import os
 
@@ -143,13 +139,15 @@ if __name__ == "__main__":
             user_year = int(user_year) if user_year != "" else None
             user_label = input("Insert a message: (optional)\n")
             user_label = user_label if user_label != "" else None
-            user_cycle = bool(
-                input("Do you want to repeat the event every year? (0/1)\n"))
+            user_cycle = input("Do you want to repeat the event every year? (y/n)\n")
+            user_cycle = bool(user_cycle) if user_cycle == 'y' else False
 
             print(user_day, user_month, user_year, user_label, user_cycle)
 
             try:
-                if bool(input("Is it good for you? (0/1)\n")):
+                is_all_good = input("Is it good for you? (y/n)\n")
+                is_all_good = bool(is_all_good) if is_all_good == 'y' else False
+                if is_all_good:
                     calendar.add_new_event(
                         user_day, user_month, user_year, user_label, user_cycle)
                     print("Event added!")
@@ -157,8 +155,8 @@ if __name__ == "__main__":
                     print("Event not added")
             except TimeoutError:
                 print("The date does not exist")
-            except Exception as e:
-                print("Unknow Error:")
+            except Exception as e:  # pylint: disable=broad-exception-caught
+                print("Unknow error:")
                 print(e)
             input()
         elif user_response == 'd':
