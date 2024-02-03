@@ -125,12 +125,12 @@ class MyCalendar():
 
 
 if __name__ == "__main__":
-    calandar = MyCalendar()
+    calendar = MyCalendar()
 
     while (user_response := input(
             'Show upcoming events, add one or delete one? (s/a/d)\n')) != '':
         if user_response == 's':
-            calandar.show_events()
+            calendar.show_events()
         elif user_response == 'a':
             user_day = int(input("Quel jours ?\n"))
             user_month = input("Quel mois ?\n")
@@ -146,7 +146,7 @@ if __name__ == "__main__":
 
             try:
                 if input("Is it good for you? (0/1)\n"):
-                    calandar.add_new_event(
+                    calendar.add_new_event(
                         user_day, user_month, user_year, user_label, user_cycle)
                     print("Tout est bon !")
                 else:
@@ -158,11 +158,11 @@ if __name__ == "__main__":
                 print(e)
             input()
         elif user_response == 'd':
-            calandar.show_events()
+            calendar.show_events()
             try:
                 user_index = int(
                     input("Which event do you want to delete? (Index starts at 0)\n"))
             except ValueError:
                 print("Index must be a number")
             else:
-                calandar.delete_event(user_index)
+                calendar.delete_event(user_index)
