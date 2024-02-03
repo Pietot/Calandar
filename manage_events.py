@@ -156,7 +156,7 @@ if __name__ == "__main__":
             except TimeoutError:
                 print("The date does not exist")
             except Exception as e:  # pylint: disable=broad-exception-caught
-                print("Unknow error:")
+                print("Error:")
                 print(e)
             input()
         elif user_response == 'd':
