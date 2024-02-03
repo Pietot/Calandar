@@ -136,12 +136,12 @@ if __name__ == "__main__":
         if user_response == 's':
             calendar.show_events()
         elif user_response == 'a':
-            user_day = int(input("Quel jours ?\n"))
-            user_month = input("Quel mois ?\n")
+            user_day = int(input("What day?\n"))
+            user_month = input("What month?\n")
             user_month = int(user_month) if user_month != "" else None
-            user_year = input("Quel année ?\n")
+            user_year = input("What year?\n")
             user_year = int(user_year) if user_year != "" else None
-            user_label = input("Inserez un message: (facultatif)\n")
+            user_label = input("Insert a message: (optional)\n")
             user_label = user_label if user_label != "" else None
             user_cycle = bool(
                 input("Do you want to repeat the event every year? (0/1)\n"))
@@ -156,7 +156,7 @@ if __name__ == "__main__":
                 else:
                     print("Event not added")
             except TimeoutError:
-                print("This date does not exist")
+                print("The date does not exist")
             except Exception as e:
                 print("Unknow Error:")
                 print(e)
