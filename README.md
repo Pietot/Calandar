@@ -35,7 +35,7 @@ Once you have downloaded the two executables, follow these steps:
 - Move both .exe in a same directory
 
 <p align="center">
-    <img src="assets/screen1.png" alt="Screen 1" width="80%" />
+    <img src="assets/Screen1.png" alt="Screen 1" width="80%" />
 </p>
 
 - Create a shortcut for verify_events.exe
@@ -44,7 +44,7 @@ Once you have downloaded the two executables, follow these steps:
   (**Windows + R** then **shell:starup** or C:/Users/{name}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup)
 
 <p align="center">
-    <img src="assets/screen2.png" alt="Screen 2" width="80%" />
+    <img src="assets/Screen2.png" alt="Screen 2" width="80%" />
 </p>
 
 That's all!
@@ -70,7 +70,7 @@ Start bien running manage_event.exe, three options are available to you:
 - If you type "a", just follow the instruction to add an event like this:
 
 <p align="center">
-    <img src="assets/screen3.png" alt="Screen 3" width="80%" />
+    <img src="assets/Screen3.png" alt="Screen 3" width="80%" />
 </p>
 
 > **Note**: If you don't want to insert a message, just press Enter. For y/n questions, you can type anything for yes, but n and nothing (blank answer) for no
