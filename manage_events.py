@@ -142,7 +142,8 @@ if __name__ == "__main__":
             user_cycle = input("Do you want to repeat the event every year? (y/n)\n")
             user_cycle = bool(user_cycle) if user_cycle == 'y' else False
 
-            print(user_day, user_month, user_year, user_label, user_cycle)
+            print(
+                f"{user_day}/{user_month}/{user_year}\nMessage:{user_label}\nCycle: {user_cycle}")
 
             try:
                 is_all_good = input("Is it good for you? (y/n)\n")
