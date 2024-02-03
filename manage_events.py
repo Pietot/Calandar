@@ -158,7 +158,6 @@ if __name__ == "__main__":
             except Exception as e:  # pylint: disable=broad-exception-caught
                 print("Error:")
                 print(e)
-            input()
         elif user_response == 'd':
             calendar.show_events()
             try:
