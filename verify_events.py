@@ -135,15 +135,15 @@ class MyCalendar():
             # Day of event has arrived
             if remaining_day == 0:
                 self.throw_windows_notification(
-                    str(event['label']), "aujourd'hui !")
+                    str(event['label']), "Today!")
             # 1 day remaining berfore the event
             elif remaining_day == 1:
                 self.throw_windows_notification(
-                    str(event['label']), "demain !")
+                    str(event['label']), "Tomorrow!")
             # 1 week remaining berfore the event
             elif remaining_day == 7:
                 self.throw_windows_notification(
-                    str(event['label']), "la semaine prochaine !")
+                    str(event['label']), "Next week!")
             else:
                 return None
         return None
@@ -174,7 +174,7 @@ class MyCalendar():
         toaster.show_toast(title="Event Reminder !",
                            msg=f'Message: {label}, {time}',
                            icon_path=self.icon_path,
-                           duration=20)
+                           duration=60*60)
 
     def delete_event(self, index: int) -> None:
         """ Deletes an event
