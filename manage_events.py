@@ -149,7 +149,7 @@ if __name__ == "__main__":
             print(user_day, user_month, user_year, user_label, user_cycle)
 
             try:
-                if input("Is it good for you? (0/1)\n"):
+                if bool(input("Is it good for you? (0/1)\n")):
                     calendar.add_new_event(
                         user_day, user_month, user_year, user_label, user_cycle)
                     print("Event added!")
