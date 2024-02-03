@@ -152,13 +152,13 @@ if __name__ == "__main__":
                 if input("Is it good for you? (0/1)\n"):
                     calendar.add_new_event(
                         user_day, user_month, user_year, user_label, user_cycle)
-                    print("Tout est bon !")
+                    print("Event added !")
                 else:
-                    print('Évènement non ajouté')
+                    print('Event not added')
             except TimeoutError:
-                print("La date n'existe pas")
-            except Exception as e:  # pylint: disable=broad-exception-caught
-                print("Petit problème:")
+                print("This date does not exist")
+            except Exception as e:
+                print("Unknow Error:")
                 print(e)
             input()
         elif user_response == 'd':
