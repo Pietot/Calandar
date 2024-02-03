@@ -4,7 +4,7 @@
 
 
 # By Piétôt
-# Discord : Piétôt#1754
+# Discord : Piétôt#1754 | Pietot
 # Start : 25/06/2023 at 00h56 FR
 # End : 26/06/2023 at 20h27 FR
 
