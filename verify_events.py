@@ -9,12 +9,6 @@
 # End : 26/06/2023 at 20h27 FR
 
 
-# Importing usefull modules:
-# json to load, save and create data
-# os pour créer des fichier
-# datetime to manipulate date
-
-
 import json
 import os
 
