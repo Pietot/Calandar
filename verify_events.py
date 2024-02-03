@@ -168,7 +168,7 @@ class MyCalendar():
         toaster.show_toast(title="Event Reminder !",
                            msg=f'Message: {label}, {time}',
                            icon_path=self.icon_path,
-                           duration=60*60)
+                           duration=7)
 
     def delete_event(self, index: int) -> None:
         """ Deletes an event
